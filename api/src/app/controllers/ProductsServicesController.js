@@ -1,5 +1,5 @@
 import ProductsServices from '../models/productsServices'
-
+import {Op} from 'sequelize'
 class ProductsServicesController {
   async store(req, res) {
     const productService = await ProductsServices.create(
